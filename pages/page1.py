@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # secrets.toml에서 API 키 불러오기
-API_KEY = "DEMO_KEY"
+API_KEY = st.secrets["NASA_API_KEY"]
 
 # 오늘 날짜를 YYYY-MM-DD 형식으로 가져오기
 today = datetime.now().strftime("%Y-%m-%d")
